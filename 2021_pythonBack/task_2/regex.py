@@ -1,0 +1,6 @@
+import re
+
+string = "A123AA11 A222AA123 A12AA123 A123CC1234 A123A12 Y23823029YYYYY P666YX33 T987123TTTTTTTT"
+pattern = r"\b[ABEKMHOPCTYX]\d{3}[ABEKMHOPCTYX]{2}\d{2,3}\b"
+
+print(re.findall(pattern, string))
